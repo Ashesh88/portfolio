@@ -425,8 +425,8 @@
         >
           <i class="fab fa-github"></i>
         </a>
-        <a
-          https://drive.google.com/file/d/1nk4KqxjRTTLYZGnCFeG5Pw2OwVXY87c0/view?usp=sharing"
+        <a 
+          href="https://drive.google.com/file/d/1nk4KqxjRTTLYZGnCFeG5Pw2OwVXY87c0/view?usp=sharing"
           target="_blank"
           class="text-gray-400 hover:text-white transition"
           aria-label="Resume/CV"
@@ -483,10 +483,7 @@
           });
         });
 
-        /**
-         * Updates the visibility of the navigation buttons based on the scroll position.
-         * Hides 'Previous' button if at the start, 'Next' button if at the end.
-         */
+      
         const updateButtonVisibility = () => {
           // Show/hide 'Previous' button
           // If scrollLeft is greater than 0, it means we are not at the very beginning
@@ -496,9 +493,7 @@
             prevButton.style.display = "none";
           }
 
-          // Show/hide 'Next' button
-          // Check if the current scroll position plus the visible width is less than the total scrollable width.
-          // A small buffer (e.g., 1px) is added to account for potential floating point inconsistencies.
+          
           const isAtEnd =
             projectsContainer.scrollLeft + projectsContainer.clientWidth >=
             projectsContainer.scrollWidth - 1;
@@ -509,7 +504,7 @@
           }
         };
 
-        // Add event listeners for scroll and window resize to update button visibility
+        
         projectsContainer.addEventListener("scroll", updateButtonVisibility);
         window.addEventListener("resize", updateButtonVisibility);
 
