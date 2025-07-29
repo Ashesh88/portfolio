@@ -1,6 +1,3 @@
-// main.js
-
-// Project Navigation
 document.addEventListener("DOMContentLoaded", () => {
   const projectsContainer = document.getElementById("projects-container");
   const prevButton = document.getElementById("prev-project");
