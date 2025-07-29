@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ashesh Singh - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -73,135 +72,132 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gradient-to-r from-indigo-500 to-blue-500 text-white">
-      <div class="container mx-auto px-4">
-        <h2
-          class="text-3xl md:text-4xl font-bold text-indigo-700 text-center mb-12"> Skills </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Each card -->
-          <div class="bg-gray-900 rounded-xl p-6 shadow-lg">
-            <h3 class="text-xl font-semibold text-purple-300 text-center mb-4">Web Development</h3>
-            <div class="space-y-4">
-              <div><div class="flex justify-between text-sm font-medium"><span>HTML/CSS</span><span>95%</span></div><div class="w-full bg-gray-700 rounded h-2 mt-1"><div class="bg-cyan-400 h-2 rounded" style="width: 95%"></div></div></div>
-              <div><div class="flex justify-between text-sm font-medium"><span>JavaScript</span><span>90%</span></div><div class="w-full bg-gray-700 rounded h-2 mt-1"><div class="bg-cyan-400 h-2 rounded" style="width: 90%"></div></div></div>
-              <div><div class="flex justify-between text-sm font-medium"><span>React</span><span>85%</span></div><div class="w-full bg-gray-700 rounded h-2 mt-1"><div class="bg-cyan-400 h-2 rounded" style="width: 85%"></div></div></div>
-              <div><div class="flex justify-between text-sm font-medium"><span>Tailwind CSS</span><span>90%</span></div><div class="w-full bg-gray-700 rounded h-2 mt-1"><div class="bg-cyan-400 h-2 rounded" style="width: 90%"></div></div></div>
-            </div>
-          </div>
+    <!--------- skill section   -->
 
-          <!-- Data Analyst -->
-      <div class="bg-gray-900 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-purple-300 text-center mb-4">Data Analyst</h3>
+   <section id="skills" class="py-20 bg-white text-gray-900">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-indigo-700 text-center mb-12">Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Web Development -->
+      <div class="skills-card bg-indigo-50 border border-gray-200 rounded-xl p-6 shadow-md h-full flex flex-col" data-aos="fade-up">
+        <h3 class="text-xl font-semibold text-indigo-600 text-center mb-4">Web Development</h3>
         <div class="space-y-4">
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>Excel</span><span>93%</span>
-            </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 93%"></div>
+            <div class="flex justify-between text-sm font-medium"><span>HTML/CSS</span><span>95%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="95" style="width: 0%"></div>
             </div>
           </div>
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>SQL</span><span>88%</span>
-            </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 88%"></div>
+            <div class="flex justify-between text-sm font-medium"><span>JavaScript</span><span>90%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="90" style="width: 0%"></div>
             </div>
           </div>
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>Python</span><span>92%</span>
-            </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 92%"></div>
+            <div class="flex justify-between text-sm font-medium"><span>React</span><span>85%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="85" style="width: 0%"></div>
             </div>
           </div>
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>Power BI</span><span>80%</span>
-            </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 80%"></div>
+            <div class="flex justify-between text-sm font-medium"><span>Tailwind CSS</span><span>90%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="90" style="width: 0%"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Programming Languages -->
-      <div class="bg-gray-900 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-purple-300 text-center mb-4">Programming Languages</h3>
+      <!-- Data Analyst -->
+      <div class="skills-card bg-indigo-50 border border-gray-200 rounded-xl p-6 shadow-md h-full flex flex-col" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-semibold text-indigo-600 text-center mb-4">Data Analyst</h3>
         <div class="space-y-4">
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>Java</span><span>85%</span>
-            </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 85%"></div>
+            <div class="flex justify-between text-sm font-medium"><span>Excel</span><span>93%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="93" style="width: 0%"></div>
             </div>
           </div>
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>Python</span><span>92%</span>
-            </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 92%"></div>
+            <div class="flex justify-between text-sm font-medium"><span>SQL</span><span>88%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="88" style="width: 0%"></div>
             </div>
           </div>
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>C++</span><span>75%</span>
-            </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 75%"></div>
+            <div class="flex justify-between text-sm font-medium"><span>Python</span><span>92%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="92" style="width: 0%"></div>
             </div>
           </div>
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>JavaScript</span><span>90%</span>
+            <div class="flex justify-between text-sm font-medium"><span>Power BI</span><span>80%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="80" style="width: 0%"></div>
             </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Languages -->
+      <div class="skills-card bg-indigo-50 border border-gray-200 rounded-xl p-6 shadow-md h-full flex flex-col" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-xl font-semibold text-indigo-600 text-center mb-4">Languages</h3>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between text-sm font-medium"><span>Java</span><span>85%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="85" style="width: 0%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm font-medium"><span>Python</span><span>92%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="92" style="width: 0%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm font-medium"><span>C++</span><span>75%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="75" style="width: 0%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm font-medium"><span>JavaScript</span><span>90%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="90" style="width: 0%"></div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Other Tools -->
-      <div class="bg-gray-900 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-purple-300 text-center mb-4">Other Tools</h3>
+      <div class="skills-card bg-indigo-50 border border-gray-200 rounded-xl p-6 shadow-md h-full flex flex-col" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-xl font-semibold text-indigo-600 text-center mb-4">Other Tools</h3>
         <div class="space-y-4">
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>Git & GitHub</span><span>91%</span>
-            </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 91%"></div>
+            <div class="flex justify-between text-sm font-medium"><span>Git & GitHub</span><span>91%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="91" style="width: 0%"></div>
             </div>
           </div>
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>Figma</span><span>78%</span>
-            </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 78%"></div>
+            <div class="flex justify-between text-sm font-medium"><span>Figma</span><span>78%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="78" style="width: 0%"></div>
             </div>
           </div>
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>WordPress</span><span>98%</span>
-            </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 98%"></div>
+            <div class="flex justify-between text-sm font-medium"><span>WordPress</span><span>98%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="98" style="width: 0%"></div>
             </div>
           </div>
           <div>
-            <div class="flex justify-between text-sm font-medium">
-              <span>Canva</span><span>70%</span>
-            </div>
-            <div class="w-full bg-gray-700 rounded h-2 mt-1">
-              <div class="bg-cyan-400 h-2 rounded" style="width: 70%"></div>
+            <div class="flex justify-between text-sm font-medium"><span>Canva</span><span>70%</span></div>
+            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
+              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="70" style="width: 0%"></div>
             </div>
           </div>
         </div>
@@ -210,6 +206,10 @@
     </div>
   </div>
 </section>
+
+
+
+   
 
 
     <!-- Projects Section -->
@@ -450,6 +450,7 @@
     </footer>
 
     <!-- JavaScript for Project Navigation -->
+     
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const projectsContainer = document.getElementById("projects-container");
@@ -481,6 +482,8 @@
           });
         });
 
+
+        
         // Event listener for the 'Previous' button
         prevButton.addEventListener("click", () => {
           projectsContainer.scrollBy({
@@ -518,6 +521,45 @@
         updateButtonVisibility();
       });
     </script>
+   <!-- AOS Library -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Animate bars from 0% to target -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bars = entry.target.querySelectorAll(".progress-bar");
+          bars.forEach(bar => {
+            const target = parseInt(bar.getAttribute("data-percentage"));
+            let current = 0;
+
+            const interval = setInterval(() => {
+              if (current >= target) {
+                clearInterval(interval);
+              } else {
+                current++;
+                bar.style.width = current + "%";
+              }
+            }, 10);
+          });
+
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    document.querySelectorAll(".skills-card").forEach(card => {
+      observer.observe(card);
+    });
+  });
+</script>
+
+
   </body>
 </html>
 
