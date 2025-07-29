@@ -1,4 +1,4 @@
-/* styles.css */
+
 
 body {
   font-family: "Inter", sans-serif;
@@ -61,21 +61,7 @@ body {
   scrollbar-width: none;     /* Firefox */
 }
 
-/* Skills Section Card */
-#skills .card {
-  background-color: #fcd5ce; /* soft beige */
-  padding: 1.5rem;
-  border-radius: 1rem;
-  color: #3e1f47;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
 
-#skills .card h3 {
-  color: #ff7e5f; /* soft orange */
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-}
 
 /* Skill Bar Visuals */
 .skill-bar {
