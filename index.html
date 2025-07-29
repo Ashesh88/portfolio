@@ -432,7 +432,7 @@
           <i class="fab fa-github"></i>
         </a>
         <a 
-          href="https://drive.google.com/file/d/1nk4KqxjRTTLYZGnCFeG5Pw2OwVXY87c0/view?usp=sharing"
+          href="https://drive.google.com/file/d/1DPcGSGLjWZ64T4B0KYcu3nyniO4FSg82/view?usp=sharing"
           target="_blank"
           class="text-gray-400 hover:text-white transition"
           aria-label="Resume/CV"
@@ -457,15 +457,11 @@
         const prevButton = document.getElementById("prev-project");
         const nextButton = document.getElementById("next-project");
 
-        // Calculate scroll amount based on card width + gap
-        // w-80 is 320px, w-96 is 384px. space-x-8 is 32px.
+        
         const baseScrollAmount = 320 + 32; // For smaller screens (mobile)
         const mdScrollAmount = 384 + 32; // For medium and larger screens (tablet/desktop)
 
-        /**
-         * Determines the scroll amount based on current window width.
-         * @returns {number} The pixel amount to scroll.
-         */
+       
         const getScrollAmount = () => {
           if (window.innerWidth >= 768) {
             // Tailwind's 'md' breakpoint
@@ -474,7 +470,7 @@
           return baseScrollAmount;
         };
 
-        // Event listener for the 'Next' button
+       
         nextButton.addEventListener("click", () => {
           projectsContainer.scrollBy({
             left: getScrollAmount(),
@@ -484,7 +480,7 @@
 
 
         
-        // Event listener for the 'Previous' button
+       
         prevButton.addEventListener("click", () => {
           projectsContainer.scrollBy({
             left: -getScrollAmount(),
