@@ -1,0 +1,109 @@
+/* styles.css */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fef9f8; /* soft peach */
+  color: #2f3e46; /* dark slate */
+  margin: 0;
+  padding: 0;
+}
+
+.section-padding {
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 6rem 2rem;
+  }
+}
+
+/* Primary Button Styling */
+.btn-primary {
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* peach to soft orange */
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 126, 95, 0.3);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(255, 126, 95, 0.4);
+}
+
+/* Project Card Styling */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Horizontal Scrollbar Hidden for Project Cards */
+#projects-container::-webkit-scrollbar {
+  display: none;
+}
+#projects-container {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Skills Section Card */
+#skills .card {
+  background-color: #fcd5ce; /* soft beige */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: #3e1f47;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+#skills .card h3 {
+  color: #ff7e5f; /* soft orange */
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+/* Skill Bar Visuals */
+.skill-bar {
+  background-color: #f8c4b4; /* light orange */
+  border-radius: 9999px;
+  height: 0.5rem;
+  overflow: hidden;
+  margin-top: 0.25rem;
+}
+
+.skill-fill {
+  background-color: #ff7e5f; /* orange */
+  height: 100%;
+  border-radius: 9999px;
+}
+
+/* Hero Profile Photo Styling */
+.hero-photo {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 9999px;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 auto 1.5rem auto;
+}
