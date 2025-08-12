@@ -1,95 +1,109 @@
-
-
-body {
-  font-family: "Inter", sans-serif;
-  background-color: #fef9f8; /* soft peach */
-  color: #2f3e46; /* dark slate */
-  margin: 0;
-  padding: 0;
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
 }
 
-.section-padding {
-  padding: 4rem 1rem;
+@keyframes glow {
+    from { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+    to { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8); }
 }
 
-@media (min-width: 768px) {
-  .section-padding {
-    padding: 6rem 2rem;
-  }
+@keyframes type {
+    0%, 100% { border-right-color: transparent; }
+    50% { border-right-color: #3b82f6; }
 }
 
-/* Primary Button Styling */
-.btn-primary {
-  background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* peach to soft orange */
-  color: white;
-  padding: 0.75rem 2rem;
-  border-radius: 0.75rem;
-  font-weight: bold;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 4px 10px rgba(255, 126, 95, 0.3);
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
+.typing-cursor::after {
+    content: '|';
+    animation: type 1s infinite;
+    color: #3b82f6;
 }
 
-.btn-primary:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 6px 15px rgba(255, 126, 95, 0.4);
+.gradient-text {
+    background: linear-gradient(45deg, #3b82f6, #10b981, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-/* Project Card Styling */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+}
+
+.skill-orb {
+    background: conic-gradient(from 0deg, #3b82f6, #10b981, #8b5cf6, #3b82f6);
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.skill-orb-inner {
+    background: white;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark .skill-orb-inner {
+    background: #1e293b;
+}
+
+.code-block {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    border-left: 4px solid #3b82f6;
+}
+
 .project-card {
-  background-color: #ffffff;
-  border-radius: 1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  overflow: hidden;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(255, 255, 255, 0.1);
 }
 
-/* Horizontal Scrollbar Hidden for Project Cards */
-#projects-container::-webkit-scrollbar {
-  display: none;
-}
-#projects-container {
-  -ms-overflow-style: none;  /* IE & Edge */
-  scrollbar-width: none;     /* Firefox */
+.dark .project-card {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(51, 65, 85, 0.3);
 }
 
-
-
-/* Skill Bar Visuals */
-.skill-bar {
-  background-color: #f8c4b4; /* light orange */
-  border-radius: 9999px;
-  height: 0.5rem;
-  overflow: hidden;
-  margin-top: 0.25rem;
+.dark .project-card:hover {
+    background: rgba(15, 23, 42, 0.8);
 }
 
-.skill-fill {
-  background-color: #ff7e5f; /* orange */
-  height: 100%;
-  border-radius: 9999px;
+.terminal {
+    background: #0f172a;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* Hero Profile Photo Styling */
-.hero-photo {
-  width: 9rem;
-  height: 9rem;
-  border-radius: 9999px;
-  border: 4px solid white;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.25rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 auto 1.5rem auto;
+.terminal-header {
+    background: #1e293b;
+    border-radius: 8px 8px 0 0;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
+
+.terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot-red { background: #ef4444; }
+.dot-yellow { background: #eab308; }
+.dot-green { background: #22c55e; }
