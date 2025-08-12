@@ -1,498 +1,670 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ashesh Singh - Portfolio</title>
+    <title>Ashesh Singh </title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body class="font-inter bg-gray-50 text-gray-800">
-    <!-- Header Section -->
-    <header class="bg-white shadow-sm py-4">
-      <nav class="container mx-auto flex justify-between items-center px-4 md:px-8">
-        <a href="#top" class="text-2xl font-bold text-indigo-600">Ashesh Singh</a>
-        <div class="space-x-4">
-          <a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium">About</a>
-          <a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium">Projects</a>
-          <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium">Contact</a>
-        </div>
-      </nav>
+</head>
+
+<body class="font-sans bg-gray-50 dark:bg-dark-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <header class="fixed w-full top-0 z-50 glass backdrop-blur-md">
+        <nav class="container mx-auto flex justify-between items-center px-4 md:px-8 py-4">
+            <a href="#top" class="text-2xl font-bold font-mono gradient-text">&lt;AsheshSingh /&gt;</a>
+            <div class="flex items-center space-x-6">
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors">About</a>
+                    <a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors">Skills</a>
+                    <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors">Projects</a>
+                    <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors">Contact</a>
+                </div>
+                
+                <button id="theme-toggle" class="p-2 rounded-lg bg-gray-200 dark:bg-dark-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-dark-600 transition-colors">
+                    <i class="fas fa-moon dark:hidden text-lg"></i>
+                    <i class="fas fa-sun hidden dark:block text-lg"></i>
+                </button>
+            </div>
+        </nav>
     </header>
 
-     <!---- Hero Section -->
-  <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-center section-padding">
-    <div class="container mx-auto px-4 md:px-8">
-      <img
-        src="#"
-        alt=""
-        class="rounded-full w-36 h-36 mx-auto mb-6 border-4 border-white shadow-lg"
-      />
-      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-        Hi, I'm Ashesh Singh!
-      </h1>
-      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-white/90 font-semibold">
-        Final-year CSE student | Data Analyst & Web Developer | Python • SQL • JavaScript | Turning data & ideas into solutions
-      </p>
-
-      <a href="#projects" class="btn-primary inline-block mb-4">View My Work</a><br>
-      <a
-        href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=asheshsingh01"
-        target="_blank"
-        class="btn-primary inline-block"
-      >
-        Follow me on LinkedIn
-      </a>
-    </div>
-  </section> 
-
-   <!------------------------------end of hero section---------------------------------------------------->
-
-
-    <!-- About Section -->
-    <section id="about" class="bg-white py-20">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-indigo-700 text-center mb-12">About Me</h2>
-        <div class="max-w-3xl mx-auto text-lg leading-relaxed">
-          <p class="mb-4">
-            Hello! I'm <strong>Ashesh Singh</strong>, a final-year B.Tech Computer Science student passionate about building meaningful digital solutions.
-          </p>
-          <p class="mb-4">
-            I specialize in <strong>Data Analytics</strong> and <strong>Web Development</strong>, and enjoy solving real-world problems using technologies like <strong>Python, SQL, JavaScript</strong>, and modern UI frameworks.
-          </p>
-          <p>
-            Outside of my professional life, I enjoy music and gaming. These activities help me stay creative, balanced, and bring fresh perspectives to my work.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!--------- skill section   -->
-
-   <section id="skills" class="py-20 bg-white text-gray-900">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-bold text-indigo-700 text-center mb-12">Skills</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-      <!-- Web Development -->
-      <div class="skills-card bg-indigo-50 border border-gray-200 rounded-xl p-6 shadow-md h-full flex flex-col" data-aos="fade-up">
-        <h3 class="text-xl font-semibold text-indigo-600 text-center mb-4">Web Development</h3>
-        <div class="space-y-4">
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>HTML/CSS</span><span>95%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="95" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>JavaScript</span><span>90%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="90" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>React</span><span>85%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="85" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>Tailwind CSS</span><span>90%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="90" style="width: 0%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Data Analyst -->
-      <div class="skills-card bg-indigo-50 border border-gray-200 rounded-xl p-6 shadow-md h-full flex flex-col" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="text-xl font-semibold text-indigo-600 text-center mb-4">Data Analyst</h3>
-        <div class="space-y-4">
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>Excel</span><span>93%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="93" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>SQL</span><span>88%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="88" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>Python</span><span>92%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="92" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>Power BI</span><span>80%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="80" style="width: 0%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--  Languages -->
-      <div class="skills-card bg-indigo-50 border border-gray-200 rounded-xl p-6 shadow-md h-full flex flex-col" data-aos="fade-up" data-aos-delay="200">
-        <h3 class="text-xl font-semibold text-indigo-600 text-center mb-4">Languages</h3>
-        <div class="space-y-4">
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>Java</span><span>85%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="85" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>Python</span><span>92%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="92" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>C++</span><span>75%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="75" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>JavaScript</span><span>90%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="90" style="width: 0%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Other Tools -->
-      <div class="skills-card bg-indigo-50 border border-gray-200 rounded-xl p-6 shadow-md h-full flex flex-col" data-aos="fade-up" data-aos-delay="300">
-        <h3 class="text-xl font-semibold text-indigo-600 text-center mb-4">Other Tools</h3>
-        <div class="space-y-4">
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>Git & GitHub</span><span>91%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="91" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>Figma</span><span>78%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="78" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>WordPress</span><span>98%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="98" style="width: 0%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm font-medium"><span>Canva</span><span>70%</span></div>
-            <div class="w-full bg-gray-200 rounded h-2 mt-1 overflow-hidden">
-              <div class="progress-bar bg-green-500 h-2 rounded" data-percentage="70" style="width: 0%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-   
-
-
-    <!-- Projects Section -->
-    <section id="projects" class="bg-gray-50 section-padding">
-      <div class="container mx-auto px-4 md:px-8">
-        <h2
-          class="text-3xl md:text-4xl font-bold text-indigo-700 text-center mb-12"
-        >
-          My Projects
-        </h2>
-        <div class="relative">
-          <div
-            id="projects-container"
-            class="flex overflow-x-auto space-x-8 pb-4 scroll-smooth"
-          >
-            <!-- Project Card 1 -->
-            <div class="project-card flex-none w-80 md:w-96">
-              <img src="./image/website_rbs.png"
-            
-                class="w-full h-48 object-cover"
-                alt="Project 1 Image"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                  RBS Furniture & Interiors Website
-                </h3>
-                <p class="text-gray-600 mb-4">
-                  Developed a responsive website for a furniture brand to showcase products, handle inquiries, and boost engagement with a modern, mobile-friendly design.<br><br>
-
-                  <strong>Technologies:</strong>HTML, CSS, Bootstrap, JavaScript, FormSubmit, Google Maps Embed.<br><br>
-
-                  <strong>My Role:</strong>Built a modern, responsive furniture website with UI design, contact form, WhatsApp links, image carousel, and gallery filter.<br>
-                </p>
-                <a
-                  href="https://rbsfurnitures.in/"
-                  class="text-indigo-600 hover:text-indigo-800 font-medium text-sm"
-                  ><strong>Link →</strong>
-                  </a>
-              </div>
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-blue-50 to-purple-50 dark:from-dark-900 dark:via-dark-800 dark:to-dark-700 pt-20">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <div class="animate-float mb-8">
+                <div class="w-32 h-32 mx-auto mb-6 skill-orb">
+                    <div class="skill-orb-inner">
+                        <i class="fas fa-code text-4xl text-primary-600"></i>
+                    </div>
+                </div>
             </div>
             
-            <!-- Project Card 2 -->
-            <div class="project-card flex-none w-80 md:w-96">
-              <img src="./image/Sales_Dashboard.png"
-                class="w-full h-48 object-cover"
-                alt="Sales Dashboard Image"
-              />
-             <div class="p-6">
-               <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                 Sales Data Analysis Dashboard
-    </h3>
-    <p class="text-gray-600 mb-4">
-      Built an interactive dashboard to analyze sales trends, product performance, and regional sales distribution for informed business decision-making.<br><br>
-
-      <strong>Technologies:</strong> Python (Pandas, NumPy), SQL, Power BI, MS Excel.<br><br>
-
-      <strong>My Role:</strong>Performed data cleaning, transformation, and dashboard design to visualize trends and generate actionable business insights effectively.<br>
-    </p>
-    <a
-      href="https://github.com/Ashesh88/Sales-Data-Analysis-Dashboard"
-      class="text-indigo-600 hover:text-indigo-800 font-medium text-sm"
-      ><strong>Link →</strong></a
-    >
-  </div>
-</div>
-
-
-            <!-- Project Card 3 -->
-            <div class="project-card flex-none w-80 md:w-96">
-              <img
-                src="./image/Resume_chatbot_ss.png"
-                class="w-full h-48 object-cover"
-                alt="Project 3 Image"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                  Resume Chatbot Website
-                </h3>
-                <p class="text-gray-600 mb-4">
-                  Built a personal chatbot website to share resume details, provide instant responses to common queries, and streamline visitor interaction.<br><br>
-                  <strong>Technologies:</strong> HTML, CSS, JavaScript, Tailwind CSS <br> <br>
-                  <strong>My Role:</strong>  Developed the chatbot logic, designed a responsive UI using Tailwind CSS, enabled resume sharing via chat interface, and deployed the project on GitHub Pages
-                </p>
-                <a
-                  href="https://ashesh88.github.io/Resume-Chatbot/"
-                  class="text-indigo-600 hover:text-indigo-800 font-medium text-sm"
-                  ><strong>Link →</strong></a
-                >
-              </div>
-            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <span class="gradient-text">Hello, I'm</span><br>
+                <span class="font-mono typing-cursor">Ashesh Singh</span>
+            </h1>
             
-            <!-- Project Card 4  -->
-            <div class="project-card flex-none w-80 md:w-96">
-              <img
-                 src="./image/To_do_list.png"
-                class="w-full h-48 object-cover"
-                alt="Project 4 Image"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                  To Do List Web Application
-                </h3>
-                <p class="text-gray-600 mb-4">
-                  Developed a responsive to-do list app with live clock, task categories, theme toggle, and auto-resetting local storage.<br><br>
-                  <strong>Technologies:</strong>HTML, CSS, JavaScript, <br> <br>
-                  <strong>My Role:</strong> Designed and developed the entire application, implemented task management features, local storage handling, and dynamic UI updates with JavaScript for an enhanced user experience.
-                </p>
-                
-                <a
-                  href="https://ashesh88.github.io/To-do-list/"
-                  class="text-indigo-600 hover:text-indigo-800 font-medium text-sm">
-                  <strong>Link →</strong>
+            <div class="terminal mx-auto max-w-2xl mb-8">
+                <div class="terminal-header">
+                    <div class="terminal-dot dot-red"></div>
+                    <div class="terminal-dot dot-yellow"></div>
+                    <div class="terminal-dot dot-green"></div>
+                    <span class="text-sm text-gray-400 ml-4">~/portfolio/about-me</span>
+                </div>
+                <div class="p-6 font-mono text-left">
+                    <div class="text-accent-400">const</div>
+                    <div class="text-blue-400 ml-4">developer = {</div>
+                    <div class="text-gray-300 ml-8">name: <span class="text-green-400">'Ashesh Singh'</span>,</div>
+                    <div class="text-gray-300 ml-8">role: <span class="text-green-400">'Full Stack Developer'</span>,</div>
+                    <div class="text-gray-300 ml-8">skills: <span class="text-yellow-400">['Python', 'JavaScript', 'React', 'SQL']</span>,</div>
+                    <div class="text-gray-300 ml-8">passion: <span class="text-green-400">'Building Amazing Web Solutions'</span></div>
+                    <div class="text-blue-400 ml-4">};</div>
+                </div>
+            </div>
+
+            <p class="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                Final-year CSE student crafting digital experiences with clean code and creative solutions
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 animate-glow">
+                    View My Work
                 </a>
-              </div>
+                <a href="https://www.linkedin.com/in/asheshsingh01/" target="_blank" class="border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300">
+                    Connect With Me
+                </a>
             </div>
-
-            <!-- Project Card 5 -->
-            <div class="project-card flex-none w-80 md:w-96">
-              <img
-                src="https://placehold.co/400x250/fef08a/334155?text=Project+5"
-                class="w-full h-48 object-cover"
-                alt="Project 3 Image"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                  Soon
-                </h3>
-                <p class="text-gray-600 mb-4">
-                 soon
-                </p>
-                <a
-                  href="#"
-                  class="text-indigo-600 hover:text-indigo-800 font-medium text-sm"
-                  ><strong>Link →</strong></a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Navigation Buttons for Projects -->
-          <button
-            id="prev-project"
-            class="absolute left-0 top-1/2 -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
-            aria-label="Previous Project"
-          >
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button
-            id="next-project"
-            class="absolute right-0 top-1/2 -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
-            aria-label="Next Project"
-          >
-            <i class="fas fa-chevron-right"></i>
-          </button>
         </div>
-      </div>
     </section>
 
-<!----------contact from----------------------------->
-
-<!-- Contact Section -->
-<section id="contact" class="bg-gradient-to-r from-purple-100 via-indigo-100 to-pink-100 py-16">
-  <div class="container mx-auto px-4 md:px-8">
-    <h2 class="text-4xl font-bold text-indigo-800 text-center mb-12">
-      Get in Touch
-    </h2>
-    <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
-      <p class="text-center text-gray-600 text-lg mb-8">
-        Have a question or want to work together? Fill out the form below.
-      </p>
-
-      <form action="https://formsubmit.co/14664028b6aa2e7fa088e9790b2f2224" method="POST" class="space-y-6">
-        <!-- Hidden Fields -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://ashesh88.github.io/portfolio/">
-        
-
-        <!-- Name Field -->
-        <div>
-          <label for="name" class="block text-sm font-medium text-indigo-700">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            class="mt-1 w-full px-4 py-2 border border-indigo-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-          />
+    <section id="about" class="py-20 bg-white dark:bg-dark-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">&lt;About&gt;</span>
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="code-block p-6 rounded-lg text-white font-mono">
+                        <div class="text-accent-400 mb-2">// Who am I?</div>
+                        <div class="text-blue-400">class</div>
+                        <div class="text-yellow-400 ml-4">Developer {</div>
+                        <div class="text-gray-300 ml-8">constructor() {</div>
+                        <div class="text-gray-300 ml-12">this.name = "Ashesh Singh";</div>
+                        <div class="text-gray-300 ml-12">this.title = "Full Stack Developer";</div>
+                        <div class="text-gray-300 ml-12">this.education = "B.Tech CSE";</div>
+                        <div class="text-gray-300 ml-8">}</div>
+                        <div class="text-yellow-400 ml-4">}</div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                            I'm a passionate <strong class="text-primary-600">Full Stack Developer</strong> and final-year Computer Science student who loves turning ideas into reality through code.
+                        </p>
+                        <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                            Specializing in <strong class="text-accent-500">Data Analytics</strong> and <strong class="text-accent-500">Web Development</strong>, I create scalable solutions using modern technologies like Python, JavaScript, React, and SQL.
+                        </p>
+                        <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                            When I'm not coding, you'll find me exploring new technologies, gaming, or listening to music - activities that keep me creative and inspired.
+                        </p>
+                        
+                        <div class="flex space-x-4 pt-4">
+                            <a href="https://drive.google.com/file/d/1425B-2MfvVjYF8jdkva8q_SWx2WyLc82/view?usp=sharing" target="_blank" class="bg-accent-500 hover:bg-accent-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+                                <i class="fas fa-download mr-2"></i>Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Email Field -->
-        <div>
-          <label for="email" class="block text-sm font-medium text-indigo-700">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            class="mt-1 w-full px-4 py-2 border border-indigo-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-          />
-        </div>
 
-        <!-- Message Field -->
-        <div>
-          <label for="message" class="block text-sm font-medium text-indigo-700">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            required
-            class="mt-1 w-full px-4 py-2 border border-indigo-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-          ></textarea>
-        </div>
+    <section id="skills" class="py-20 bg-gray-50 dark:bg-dark-900">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">
+      <span class="gradient-text">&lt;Skills&gt;</span>
+    </h2>   
+    
 
-        <!-- Submit Button -->
-        <div class="text-center">
-          <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-300">
-            Send Message
-          </button>
+    <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-8">
+      <h2 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-100">Programming Languages</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Java</span>
         </div>
-      </form>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Python</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">JavaScript</span>
+        </div>
+      </div>
     </div>
+
+    <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-8">
+      <h2 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-100">Frontend</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_128.png" alt="Next.js" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">HTML5</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">CSS</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">React</span>
+        </div>
+
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="Next.js" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Next.js</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Redux" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Bootstrap</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="Tailwind CSS" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Tailwind CSS</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://mui.com/static/logo.png" alt="MUI" class="w-6 h-6 rounded" />
+          <span class="text-gray-800 dark:text-gray-200">MUI</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Vercel_logo_2025.svg" alt="Vercel" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Vercel</span>
+        </div>
+      </div>
+    </div>
+
+      <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-8">
+      <h2 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-100">Backend </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+       <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Node.js</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="Express.js" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Express.js</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">MongoDB</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">PostgreSQL</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" alt="Cloudflare" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Cloudflare</span>
+        </div>
+      </div>
+    </div>
+
+      <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg mb-8">
+      <h2 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-100">Tools  & Tech</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Git</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Github" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Github</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg" alt="Jupyter Notebook" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Jupyter Notebook</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Docker</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Figma</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+      <h2 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-100">DA Tools & Libaries</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" alt="MS Excel" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">MS Excel</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Power BI</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://numpy.org/images/logo.svg" alt="Numpy" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Numpy</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://matplotlib.org/stable/_images/sphx_glr_logos2_001.png" alt="Matplotlib" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Matplotlib</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg" alt="Pandas" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Pandas</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Logo-seaborn.png" alt="Seaborn" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">Seaborn</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gray-100 dark:bg-gray-700 rounded-md px-4 py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg" alt="SQL" class="w-6 h-6" />
+          <span class="text-gray-800 dark:text-gray-200">SQL</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-    
-<!-------end of contact from----------------------->
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-8 text-center">
-      <p>&copy; 2025 Ashesh Singh. All rights reserved.</p>
+    <section id="projects" class="py-20 bg-white dark:bg-dark-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">&lt;Projects&gt;</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <div class="project-card rounded-xl p-6 hover:shadow-2xl transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="./image/website_rbs.png" alt="RBS Furniture Website" class="w-full h-48 object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">Live Preview</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-gray-100">RBS Furniture & Interiors</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                        Modern, responsive furniture website with product showcase, contact forms, and interactive galleries.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">CSS</span>
+                        <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm">Bootstrap</span>
+                        <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">JavaScript</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="https://rbsfurnitures.in/" target="_blank" class="text-primary-600 hover:text-primary-700 font-semibold flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                        <div class="flex space-x-2">
+                            <button class="p-2 rounded-full bg-gray-100 dark:bg-dark-700 hover:bg-gray-200 dark:hover:bg-dark-600 transition-colors">
+                                <i class="fab fa-github text-gray-600 dark:text-gray-400"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="mt-4 space-x-6 text-2xl">
-        <a
-          href="https://www.linkedin.com/in/asheshsingh01/"
-          target="_blank"
-          class="text-gray-400 hover:text-white transition"
-          aria-label="LinkedIn Profile"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a
-          href="https://github.com/Ashesh88"
-          target="_blank"
-          class="text-gray-400 hover:text-white transition"
-          aria-label="GitHub Profile"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a 
-          href="https://drive.google.com/file/d/1425B-2MfvVjYF8jdkva8q_SWx2WyLc82/view?usp=sharing"
-          target="_blank"
-          class="text-gray-400 hover:text-white transition"
-          aria-label="Resume/CV"
-        >
-          <i class="fas fa-file-alt"></i>
-        </a>
-        <a
-          href="mailto:asheshsingh35@gmail.com"
-          class="text-gray-400 hover:text-white transition"
-          aria-label="Send Email"
-        >
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
+                <div class="project-card rounded-xl p-6 hover:shadow-2xl transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="./image/Sales_Dashboard.png" alt="Sales Dashboard" class="w-full h-48 object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">View Project</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-gray-100">Sales Data Analysis Dashboard</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                        Interactive dashboard analyzing sales trends, performance metrics, and regional distribution insights.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Power BI</span>
+                        <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm">SQL</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="https://github.com/Ashesh88/Sales-Data-Analysis-Dashboard" target="_blank" class="text-primary-600 hover:text-primary-700 font-semibold flex items-center">
+                            <i class="fab fa-github mr-2"></i>View Code
+                        </a>
+                        <div class="flex space-x-2">
+                            <button class="p-2 rounded-full bg-gray-100 dark:bg-dark-700 hover:bg-gray-200 dark:hover:bg-dark-600 transition-colors">
+                                <i class="fas fa-chart-bar text-gray-600 dark:text-gray-400"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card rounded-xl p-6 hover:shadow-2xl transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="./image/Resume_chatbot_ss.png" alt="Resume Chatbot" class="w-full h-48 object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">Try Demo</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-gray-100">Resume Chatbot Website</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                        Interactive chatbot for sharing your resume details and answering visitor queries instantly and accurately.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">Tailwind</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="https://ashesh88.github.io/Resume-Chatbot/" target="_blank" class="text-primary-600 hover:text-primary-700 font-semibold flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                        <div class="flex space-x-2">
+                            <button class="p-2 rounded-full bg-gray-100 dark:bg-dark-700 hover:bg-gray-200 dark:hover:bg-dark-600 transition-colors">
+                                <i class="fas fa-robot text-gray-600 dark:text-gray-400"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card rounded-xl p-6 hover:shadow-2xl transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="./image/To_do_list.png" alt="Todo List App" class="w-full h-48 object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">Try App</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-gray-100">Todo List Web Application</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                        Feature-rich todo app with live clock, categories, themes, and persistent local storage.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">CSS</span>
+                        <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">JavaScript</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="https://ashesh88.github.io/To-do-list/" target="_blank" class="text-primary-600 hover:text-primary-700 font-semibold flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                        <div class="flex space-x-2">
+                            <button class="p-2 rounded-full bg-gray-100 dark:bg-dark-700 hover:bg-gray-200 dark:hover:bg-dark-600 transition-colors">
+                                <i class="fas fa-tasks text-gray-600 dark:text-gray-400"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card rounded-xl p-6 hover:shadow-2xl transition-all duration-300 opacity-75">
+                    <div class="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-dark-700 dark:to-dark-600 flex items-center justify-center h-48">
+                        <div class="text-center">
+                            <i class="fas fa-code text-4xl text-gray-500 dark:text-gray-400 mb-4"></i>
+                            <p class="text-gray-600 dark:text-gray-300 font-semibold">Coming Soon</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-gray-100">Next Project</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        Working on something exciting! Stay tuned for updates.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded-full text-sm">TBA</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500 font-semibold flex items-center">
+                            <i class="fas fa-clock mr-2"></i>In Progress
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gradient-to-br from-primary-50 via-purple-50 to-pink-50 dark:from-dark-900 dark:via-dark-800 dark:to-dark-700">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">&lt;Contact&gt;</span>
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div class="terminal">
+                            <div class="terminal-header">
+                                <div class="terminal-dot dot-red"></div>
+                                <div class="terminal-dot dot-yellow"></div>
+                                <div class="terminal-dot dot-green"></div>
+                                <span class="text-sm text-gray-400 ml-4">~/contact/info</span>
+                            </div>
+                            <div class="p-6 font-mono text-white">
+                                <div class="text-accent-400">const</div>
+                                <div class="text-blue-400 ml-4">contactInfo = {</div>
+                                <div class="text-gray-300 ml-8">email: <span class="text-green-400">'asheshsingh35@gmail.com'</span>,</div>
+                                <div class="text-gray-300 ml-8">location: <span class="text-green-400">'Noida'</span>,</div>
+                                <div class="text-gray-300 ml-8">available: <span class="text-yellow-400">true</span>,</div>
+                                <div class="text-gray-300 ml-8">status: <span class="text-green-400">'Open to opportunities'</span></div>
+                                <div class="text-blue-400 ml-4">};</div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Let's Connect!</h3>
+                            
+                            <div class="flex items-center space-x-4 p-4 glass rounded-lg">
+                                <div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 dark:text-gray-200">Email</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">asheshsingh35@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4 p-4 glass rounded-lg">
+                                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                                    <i class="fab fa-linkedin text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 dark:text-gray-200">LinkedIn</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Connect with me professionally</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4 p-4 glass rounded-lg">
+                                <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
+                                    <i class="fab fa-github text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 dark:text-gray-200">GitHub</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Check out my repositories</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Send Message</h3>
+                        
+                        <form action="https://formsubmit.co/14664028b6aa2e7fa088e9790b2f2224" method="POST" class="space-y-6">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://ashesh88.github.io/portfolio/">
+                            
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                    <i class="fas fa-user mr-2"></i>Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                    class="w-full px-4 py-3 border border-gray-300 dark:border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-dark-700 text-gray-900 dark:text-gray-100 transition-colors"
+                                    placeholder="Your Name"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                    <i class="fas fa-envelope mr-2"></i>Email
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    class="w-full px-4 py-3 border border-gray-300 dark:border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-dark-700 text-gray-900 dark:text-gray-100 transition-colors"
+                                    placeholder="your.email@example.com"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                    <i class="fas fa-tag mr-2"></i>Subject
+                                </label>
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    required
+                                    class="w-full px-4 py-3 border border-gray-300 dark:border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-dark-700 text-gray-900 dark:text-gray-100 transition-colors"
+                                    placeholder="Let's discuss..."
+                                />
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                    <i class="fas fa-comment mr-2"></i>Message
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    required
+                                    class="w-full px-4 py-3 border border-gray-300 dark:border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-dark-700 text-gray-900 dark:text-gray-100 transition-colors resize-none"
+                                    placeholder="Tell me about your project or just say hi!"
+                                ></textarea>
+                            </div>
+
+                            <button 
+                                type="submit" 
+                                class="w-full bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                            >
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-primary-600 to-accent-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-code text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-mono text-white">&lt;AsheshSingh /&gt;</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Passionate Full Stack Developer crafting digital experiences with clean code and creative solutions. Always learning, always building.
+                    </p>
+                    
+                    <div class="terminal max-w-md">
+                        <div class="terminal-header">
+                            <div class="terminal-dot dot-red"></div>
+                            <div class="terminal-dot dot-yellow"></div>
+                            <div class="terminal-dot dot-green"></div>
+                            <span class="text-sm text-gray-400 ml-4">~/quote</span>
+                        </div>
+                        <div class="p-4 font-mono text-sm">
+                            <div class="text-accent-400">console.log(</div>
+                            <div class="text-green-400 ml-4">"Code is poetry written for machines"</div>
+                            <div class="text-accent-400">);</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-primary-400 transition-colors">About</a></li>
+                        <li><a href="#skills" class="hover:text-primary-400 transition-colors">Skills</a></li>
+                        <li><a href="#projects" class="hover:text-primary-400 transition-colors">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-primary-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-6">
+                        <a 
+                            href="https://www.linkedin.com/in/asheshsingh01/"
+                            target="_blank"
+                            class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-lg flex items-center justify-center transition-colors transform hover:scale-110"
+                            aria-label="LinkedIn Profile"
+                        >
+                            <i class="fab fa-linkedin text-white"></i>
+                        </a>
+                        <a 
+                            href="https://github.com/Ashesh88"
+                            target="_blank"
+                            class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-lg flex items-center justify-center transition-colors transform hover:scale-110"
+                            aria-label="GitHub Profile"
+                        >
+                            <i class="fab fa-github text-white"></i>
+                        </a>
+                        <a 
+                            href="mailto:asheshsingh35@gmail.com"
+                            class="w-10 h-10 bg-red-600 hover:bg-red-700 rounded-lg flex items-center justify-center transition-colors transform hover:scale-110"
+                            aria-label="Send Email"
+                        >
+                            <i class="fas fa-envelope text-white"></i>
+                        </a>
+                        <a 
+                            href="https://drive.google.com/file/d/1425B-2MfvVjYF8jdkva8q_SWx2WyLc82/view?usp=sharing"
+                            target="_blank"
+                            class="w-10 h-10 bg-green-600 hover:bg-green-700 rounded-lg flex items-center justify-center transition-colors transform hover:scale-110"
+                            aria-label="Resume/CV"
+                        >
+                            <i class="fas fa-file-alt text-white"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="text-sm text-gray-400">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>NOida, India</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>Available for opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-sm text-gray-400 mb-4 md:mb-0">
+                        <span>&copy; 2025 Ashesh Singh. All rights reserved.</span>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4 text-sm text-gray-400">
+                        <span>Built with</span>
+                        <i class="fas fa-heart text-red-500"></i>
+                    </div>
+                </div>
+                
+                <button 
+                    id="backToTop"
+                    class="fixed bottom-8 right-8 w-12 h-12 bg-primary-600 hover:bg-primary-700 text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:scale-110"
+                    aria-label="Back to top"
+                >
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
     </footer>
-    
-<!-- AOS Library -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
-
-<script src="script.js"></script>
-
-
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
-
-         
-
-       
-    
-
-      
-
-
-
-
