@@ -403,26 +403,35 @@
 
 <!----------------Project 5  ------------------------->
 
-                 <div class="project-card rounded-xl p-6 hover:shadow-2xl transition-all duration-300 opacity-75">
-                    <div class="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-dark-700 dark:to-dark-600 flex items-center justify-center h-48">
-                        <div class="text-center">
-                            <i class="fas fa-code text-4xl text-gray-500 dark:text-gray-400 mb-4"></i>
-                            <p class="text-gray-600 dark:text-gray-300 font-semibold">Coming Soon</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-gray-100">Next Project</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">
-                        Working on something exciting! Stay tuned for updates.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded-full text-sm">TBA</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-500 font-semibold flex items-center">
-                            <i class="fas fa-clock mr-2"></i>In Progress
-                        </span>
-                    </div>
-                </div>
+                 <div class="project-card rounded-xl p-6 hover:shadow-2xl transition-all duration-300">
+    <div class="relative overflow-hidden rounded-lg mb-6">
+        <img src="./image/movie_recommender.png" alt="Movie Recommendation System" class="w-full h-48 object-cover transform hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white font-semibold">Try App</span>
+        </div>
+    </div>
+    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-gray-100">Movie Recommendation System</h3>
+    <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+        Interactive web app recommending movies using content-based filtering, with genre filters and poster previews fetched from OMDB API.
+    </p>
+    <div class="flex flex-wrap gap-2 mb-4">
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Python</span>
+        <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Streamlit</span>
+        <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">Pinecone</span>
+        <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-sm">TF-IDF</span>
+    </div>
+    <div class="flex justify-between items-center">
+        <a href="https://movie-recommender-zeic.onrender.com/" target="_blank" class="text-primary-600 hover:text-primary-700 font-semibold flex items-center">
+            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+        </a>
+        <div class="flex space-x-2">
+            <button class="p-2 rounded-full bg-gray-100 dark:bg-dark-700 hover:bg-gray-200 dark:hover:bg-dark-600 transition-colors">
+                <i class="fas fa-film text-gray-600 dark:text-gray-400"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
 
 <!----------------Project 6  ------------------------->
 
@@ -702,5 +711,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
